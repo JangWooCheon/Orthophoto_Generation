@@ -19,8 +19,5 @@ def ortho():
     myfunc = mydll['ortho']
     myfunc.argtypes = (c.c_char_p, c.c_char_p, c.c_char_p, c.c_char_p, c.c_double, c.c_double, c.c_double, c.c_double)
     myfunc(input_file_path, output_file_path, eo_name, image_name, focal_length, gsd, pixel_size, ground_height)
-    '''
-    test
-    '''
 
 ortho()
